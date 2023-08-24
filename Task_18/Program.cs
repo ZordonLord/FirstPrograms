@@ -8,13 +8,13 @@ string RangeCoordinates(int quart)
     if(quart == 2) return "x < 0 ; y > 0";
     if(quart == 3) return "x < 0 ; y < 0";
     if(quart == 4) return "x > 0 ; y < 0";
-    return null;
+    return String.Empty;
 }
 
 Console.WriteLine("Введите номер четверти");
 int quarter = Convert.ToInt32(Console.ReadLine());
 
 string rangeCoordinates = RangeCoordinates(quarter);
-string result = rangeCoordinates != null ? rangeCoordinates 
+string result = rangeCoordinates != String.Empty ? rangeCoordinates 
                                         : "Введена некорректная четверть";
 Console.WriteLine(result);
