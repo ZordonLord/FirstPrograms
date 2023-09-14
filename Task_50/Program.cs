@@ -35,7 +35,7 @@ void PrintMatrix(int[,] matrix)
 
 void ValueElementMatrix(int[,] matrix, int row, int column)
 {
-    if (row < matrix.GetLength(0) && column < matrix.GetLength(1))
+    if (row > 0 && column > 0 && row < matrix.GetLength(0) && column < matrix.GetLength(1))
     {
         Console.WriteLine($"{row}, {column} -> {matrix[row-1, column-1]}");
     }
