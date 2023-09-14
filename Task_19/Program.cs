@@ -18,7 +18,7 @@ if ((number > 9999 && number < 100000) || (number > -100000 && number < -9999))
 {
     bool palindrom = Palindrom(number);
 
-    if (palindrom == true) Console.WriteLine($"Число {number} является палиндромом");
+    if (palindrom) Console.WriteLine($"Число {number} является палиндромом");
     else Console.WriteLine($"Число {number} не является палиндромом");
 }
 else
